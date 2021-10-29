@@ -12,7 +12,7 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
   <!-- Load Leaflet basemap providers -->
-  <script src="<?= base_url('public/storymaps') ?>/scripts/leaflet-providers.js"></script>
+  <!-- <script src="<?= base_url('public/storymaps') ?>/scripts/leaflet-providers.js"></script> -->
 
   <!-- Load jQuery  -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
