@@ -120,13 +120,13 @@
     /**
      * Loads the basemap and adds it to the map
      */
-    function addBaseMap() {
-      var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-      console.log(basemap);
-      L.tileLayer.provider(basemap, {
-        maxZoom: 18
-      }).addTo(map);
-    }
+    // function addBaseMap() {
+    //   var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
+    //   console.log(basemap);
+    //   L.tileLayer.provider(basemap, {
+    //     maxZoom: 18
+    //   }).addTo(map);
+    // }
 
     function initMap(options, chapters) {
       createDocumentSettings(options);
@@ -322,7 +322,8 @@
           .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
           .append(media ? mediaContainer : '')
           .append(media ? source : '')
-          .append('<p class="description">' + c['Description'] + '</p>');
+          .append('<p class="description">' + c['Description'] + '</p>')
+          .append('<a href="https://www.google.com/maps/dir/?api=1&destination=' + c['Latitude'] + ',' + c['Longitude'] + '&travelmode=driving" target="_blank">Rute ke lokasi</a><hr>');
 
         $('#contents').append(container);
 

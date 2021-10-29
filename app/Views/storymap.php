@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
-  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="icon" type="image/png" href="<?= base_url('public') ?>/favicon.png">
   <title><?= $title ?></title>
 
   <!-- Load Leaflet CSS and JS-->
@@ -53,8 +53,8 @@
   <script type="text/javascript">
     // Create the Leaflet map with a generic start point
     var map = L.map('map', {
-      center: [0, 0],
-      zoom: 1,
+      center: [-7.5474854,110.3680225],
+      zoom: 14,
       scrollWheelZoom: true,
       zoomControl: false,
       tap: false
