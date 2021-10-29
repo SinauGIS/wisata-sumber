@@ -149,11 +149,34 @@
       // Load tiles
       // addBaseMap();
 
-      var basemap = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-      }).addTo(map);
+      // var basemap = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      //   maxZoom: 20,
+      //   subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+      // }).addTo(map);
+      var basemaps = [
+        L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+          maxZoom: 20,
+          subdomains:['mt0','mt1','mt2','mt3']
+        }),
+        L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+          maxZoom: 20,
+          subdomains:['mt0','mt1','mt2','mt3']
+        }),
+        L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+          maxZoom: 20,
+          subdomains:['mt0','mt1','mt2','mt3']
+        })
+      ];
 
+      /* Control Basemaps */
+      map.addControl(
+        L.control.basemaps({
+          basemaps: basemaps,
+          tileX: 6609,
+          tileY: 4268,
+          tileZ: 13
+        })
+      );
 
       // Add zoom controls if needed
       if (getSetting('_zoomControls') !== 'off') {
@@ -161,6 +184,11 @@
           position: getSetting('_zoomControls')
         }).addTo(map);
       }
+
+      /* Home extent */
+      L.control.defaultExtent({
+        position: getSetting('_zoomControls')
+      }).addTo(map);
 
       var markers = [];
 

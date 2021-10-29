@@ -27,6 +27,8 @@
   <!-- Load Font-Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="<?= base_url('public/storymaps') ?>/markers/leaflet.extra-markers.min.css">
+  <link rel="stylesheet" href="<?= base_url('public/storymaps/lib') ?>/Leaflet.Basemap/L.Control.Basemaps.css">
+  <link rel="stylesheet" href="<?= base_url('public/storymaps/lib') ?>/leaflet-defaultextent/leaflet.defaultextent.css">
   <link rel="stylesheet" href="<?= base_url('public/storymaps') ?>/css/style.css">
   <link rel="stylesheet" href="<?= base_url('public/storymaps') ?>/css/style-desktop.css">
   <link rel="stylesheet" href="<?= base_url('public/storymaps') ?>/css/loader.css">
@@ -61,6 +63,8 @@
 
   <script type="text/javascript" src="<?= base_url('public/storymaps') ?>/google-doc-url.js"></script>
   <script type="text/javascript" src="<?= base_url('public/storymaps') ?>/markers/leaflet.extra-markers.min.js"></script>
+  <script type="text/javascript" src="<?= base_url('public/storymaps/lib') ?>/Leaflet.Basemap/L.Control.Basemaps-min.js"></script>
+  <script type="text/javascript" src="<?= base_url('public/storymaps/lib') ?>/leaflet-defaultextent/leaflet.defaultextent.js"></script>
   <script type="text/javascript" src="<?= base_url('public/storymaps') ?>/scripts/constants.js"></script>
   <script type="text/javascript" src="<?= base_url('public/storymaps') ?>/scripts/jquery.csv.js"></script>
   <!-- <script type="text/javascript" src="<?= base_url('public/storymaps') ?>/scripts/storymap.js"></script> -->
