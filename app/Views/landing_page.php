@@ -274,32 +274,35 @@
 <body>
   <nav class="nav nav--left js-nav">
     <ul>
-      <li>
-        <a href="#"><span>Mens</span></a>
+      <!-- <li>
+        <a href="#"><span>Wisata</span></a>
       </li>
       <li>
-        <a href="#"><span>Womens</span></a>
-      </li>
+        <a href="#"><span>Fasum</span></a>
+      </li> -->
       <li>
-        <a href="#" class="is-active"><span>Collections</span></a>
+        <a href="#" class="is-active"><span>Peta Wisata</span></a>
       </li>
     </ul>
   </nav>
 
   <figure class="logo">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/logo_copy_copy.svg">
+    <img src="<?= base_url('public/landing/img/landing_logo.svg') ?>">
   </figure>
 
   <nav class="nav nav--right">
     <ul>
       <li>
-        <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a>
+        <a href="https://desa-sumber.magelangkab.go.id/">Sistem Informasi Desa</a>
       </li>
+      <!-- <li>
+        <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a>
+      </li> -->
       <li>
-        <a href="#">
+        <!-- <a href="#">
           <span>Cart</span>
           <div class="cart-total">0</div>
-        </a>
+        </a> -->
       </li>
     </ul>
   </nav>
