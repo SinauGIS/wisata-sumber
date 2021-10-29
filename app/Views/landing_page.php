@@ -281,7 +281,7 @@
         <a href="#"><span>Fasum</span></a>
       </li> -->
       <li>
-        <a href="#" class="is-active"><span>Peta Wisata</span></a>
+        <a href="<?= base_url('Home/maps') ?>" class="is-active"><span>Peta Wisata</span></a>
       </li>
     </ul>
   </nav>
@@ -313,25 +313,25 @@
     <div class="slide js-slide">
       <div class="slide__content">
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg">
+          <img src="<?= base_url('public/landing/img/f2.jpg') ?>">
         </figure>
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg">
+          <img src="<?= base_url('public/landing/img/f3.jpg') ?>">
         </figure>
       </div>
 
       <div class="slider__text js-slider__text">
         <div class="slider__text-line js-slider__text-line">
-          <div>Black is</div>
+          <div>We Travel</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>timeless. Black is</div>
+          <div>Not to Escape life,</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>the colour of</div>
+          <div>but for life not</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>Eternity.</div>
+          <div>to escape us</div>
         </div>
       </div>
 
@@ -340,10 +340,10 @@
     <div class="slide js-slide">
       <div class="slide__content">
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg">
+          <img src="<?= base_url('public/landing/img/f1.jpg') ?>">
         </figure>
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg">
+          <img src="<?= base_url('public/landing/img/f4.jpg') ?>">
         </figure>
       </div>
     </div>
@@ -351,10 +351,10 @@
     <div class="slide js-slide">
       <div class="slide__content">
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg">
+          <img src="<?= base_url('public/landing/img/f5.jpg') ?>">
         </figure>
         <figure class="slide__img js-slide__img">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg">
+          <img src="<?= base_url('public/landing/img/f6.jpg') ?>">
         </figure>
       </div>
     </div>
@@ -380,8 +380,7 @@
 
   <div class="vert-text">
     <span>
-      Wings+Horns<br>
-      X Kyoto Black
+      SinauGIS
     </span>
   </div>
 
@@ -452,9 +451,9 @@
         this.camera = null;
 
         this.images = [
-          'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg1.jpg',
-          'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg2.jpg',
-          'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg3.jpg'
+          '<?= base_url('public/landing/img/bg1.jpg') ?>',
+          '<?= base_url('public/landing/img/bg2.jpg') ?>',
+          '<?= base_url('public/landing/img/bg3.jpg') ?>',
         ];
 
 
@@ -787,15 +786,15 @@
 
 
     // Toggle active link
-    const links = document.querySelectorAll('.js-nav a');
+    // const links = document.querySelectorAll('.js-nav a');
 
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        links.forEach(other => other.classList.remove('is-active'));
-        link.classList.add('is-active');
-      });
-    });
+    // links.forEach(link => {
+    //   link.addEventListener('click', e => {
+    //     e.preventDefault();
+    //     links.forEach(other => other.classList.remove('is-active'));
+    //     link.classList.add('is-active');
+    //   });
+    // });
 
     // Init classes
     const slider = new Slider();
