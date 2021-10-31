@@ -174,7 +174,8 @@
           basemaps: basemaps,
           tileX: 6609,
           tileY: 4268,
-          tileZ: 13
+          tileZ: 13,
+          position: 'bottomleft'
         })
       );
 
@@ -231,6 +232,7 @@
               }),
               opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
               interactive: c['Marker'] === 'Hidden' ? false : true,
+              title: c['Chapter'],
             }));
 
         } else {
