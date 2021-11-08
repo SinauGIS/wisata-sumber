@@ -55,7 +55,7 @@
 
     .logo img {
       display: block;
-      height: 1rem;
+      height: 2rem;
       width: auto;
     }
 
@@ -269,6 +269,52 @@
       -o-object-fit: cover;
       object-fit: cover;
     }
+
+    .buttons {
+      margin: 5%;
+      text-align: center;
+    }
+
+    .btn-hover {
+      width: 130px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 5px;
+      height: 40px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+
+      border-radius: 50px;
+      /* moz-transition: all .4s ease-in-out; */
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:hover {
+      background-position: 100% 0;
+      /* moz-transition: all .4s ease-in-out; */
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+      outline: none;
+    }
+
+    .btn-hover.color-2 {
+      background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+      box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    }
+
+    .btn-hover.color-4 {
+      background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+      box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
   </style>
 </head>
 
@@ -282,7 +328,9 @@
         <a href="#"><span>Fasum</span></a>
       </li> -->
       <li>
-        <a href="<?= base_url('Home/maps') ?>" class="is-active"><span>Peta Wisata</span></a>
+        <div class="button">
+          <a class="btn-hover color-2" style="justify-content: center; font-size:17px;" href="<?= base_url('Home/maps') ?>">Peta Wisata</a>
+        </div>
       </li>
     </ul>
   </nav>
@@ -294,7 +342,9 @@
   <nav class="nav nav--right">
     <ul>
       <li>
-        <a href="https://desa-sumber.magelangkab.go.id/">Sistem Informasi Desa</a>
+        <div class="button">
+          <a class="btn-hover color-4" style="justify-content: center; font-size:17px;" href="https://desa-sumber.magelangkab.go.id/">SID</a>
+        </div>
       </li>
       <!-- <li>
         <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a>
