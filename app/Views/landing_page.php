@@ -323,16 +323,16 @@
 
       <div class="slider__text js-slider__text">
         <div class="slider__text-line js-slider__text-line">
-          <div>We Travel</div>
+          <div>Wisata</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>Not to Escape life,</div>
+          <div>Edu Park</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>but for life not</div>
+          <div>Kawasan Merapi</div>
         </div>
         <div class="slider__text-line js-slider__text-line">
-          <div>to escape us</div>
+          <div>Kecamatan Dukun</div>
         </div>
       </div>
 
