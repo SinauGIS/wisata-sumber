@@ -59,6 +59,13 @@
       width: auto;
     }
 
+    @media only screen and (min-device-width : 13px) and (max-device-with : 750px) {
+      .logo {
+        display: none;
+      }
+
+    }
+
     ul,
     li {
       list-style: none;
@@ -335,7 +342,7 @@
     </ul>
   </nav>
 
-  <figure class="logo">
+  <figure class="logo logo_hilang">
     <img src="<?= base_url('public/landing/img/landing_logo.svg') ?>">
   </figure>
 
@@ -650,7 +657,6 @@
           fragmentShader: this.frag
         });
 
-
         const geometry = new THREE.PlaneBufferGeometry(
           this.el.offsetWidth,
           this.el.offsetHeight,
@@ -674,7 +680,6 @@
             this.state.animating = false;
           }
         });
-
 
         const current = this.slides[this.data.current];
         const next = this.slides[this.data.next];
